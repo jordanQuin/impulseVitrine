@@ -1,58 +1,54 @@
-// app/components/Header.tsx
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-gray-200 shadow-md">
-      <nav className="max-w-5xl mx-auto flex items-center justify-between py-4 px-4">
+    <header className="bg-white shadow-lg"> 
+      <nav className="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 sm:px-6 lg:px-8">
         <Link href="/">
           <Image
             src="/logo.png"
             alt="Impulse Logo"
-            width={96} // Reduced from 120 to 96 (20% reduction)
-            height={32} // Reduced from 40 to 32 (20% reduction)
+            width={110} 
+            height={36} 
             priority
           />
         </Link>
-        <div className="flex gap-4 text-7px">
-          <Link
-            href="/"
-            className="relative text-gray-800 hover:text-[#4186fd] transition group"
-          >
-            Accueil
-            <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#4186fd] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            href="/qui-sommes-nous"
-            className="relative text-gray-800 hover:text-[#4186fd] transition group"
-          >
-            Qui sommes-nous
-            <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#4186fd] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            href="/formation"
-            className="relative text-gray-800 hover:text-[#4186fd] transition group"
-          >
-            Formation
-            <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#4186fd] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            href="/application"
-            className="relative text-gray-800 hover:text-[#4186fd] transition group"
-          >
-            Appli
-            <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#4186fd] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+
+        <div className="hidden md:flex items-center space-x-6 text-sm">
+          <NavLink href="/">Accueil</NavLink>
+          <NavLink href="/qui-sommes-nous">Qui sommes-nous</NavLink>
+          <NavLink href="/formation">Formation</NavLink>
+          <NavLink href="/application">Appli</NavLink>
+          
           <Link
             href="/contact"
-            className="relative text-gray-800 hover:text-[#4186fd] transition group"
+            className="px-4 py-2 text-sm font-semibold text-white bg-[#4186fd] rounded-full hover:bg-blue-600 transition duration-300 shadow-md"
           >
-            Contact
-            <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#4186fd] transition-all duration-300 group-hover:w-full"></span>
+            Contactez-nous
           </Link>
+        </div>
+
+        <div className="md:hidden">
+            <button className="text-gray-600 hover:text-[#4186fd]">
+                Menu
+            </button>
         </div>
       </nav>
     </header>
+  );
+}
+
+function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
+  const accentColor = '#4186fd';
+  
+  return (
+    <Link
+      href={href}
+      className="relative text-gray-700 font-medium hover:text-blue-600 transition group"
+    >
+      {children}
+      <span className="absolute left-0 bottom-[-4px] w-0 h-[3px] bg-blue-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
+    </Link>
   );
 }
