@@ -73,17 +73,17 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <PillarCard
-              icon={<span className={`text-[${primaryColor}]`}>⚡</span>} // Remplacer par une icône réelle (Zap/Flash)
+              icon={<span className={`text-[${primaryColor}]`}>⚡</span>}
               title="Expertise Certifiée"
               description="Des formateurs qualifiés et des certifications reconnues dans le domaine du sport et du bien-être."
             />
             <PillarCard
-              icon={<span className={`text-[${primaryColor}]`}>🎯</span>} // Remplacer par une icône réelle (Target/Cible)
+              icon={<span className={`text-[${primaryColor}]`}>🎯</span>} 
               title="Apprentissage Personnalisé"
               description="Des parcours adaptés à votre niveau et à vos objectifs professionnels ou personnels spécifiques."
             />
             <PillarCard
-              icon={<span className={`text-[${primaryColor}]`}>📱</span>} // Remplacer par une icône réelle (Mobile)
+              icon={<span className={`text-[${primaryColor}]`}>📱</span>} 
               title="Application Connectée"
               description="Accédez à vos ressources, suivez vos progrès et restez connecté à la communauté via notre appli dédiée."
             />
