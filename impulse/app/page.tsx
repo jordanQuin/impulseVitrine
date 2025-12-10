@@ -60,8 +60,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <hr className="my-10 border-gray-200" />
-
         {/* 2. SECTION VALEURS / PILIERS */}
         <section className="py-16">
           <div className="text-center mb-12">
@@ -90,10 +88,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        <hr className="my-10 border-gray-200" />
-
         {/* 3. SECTION CTA SECONDAIRE (Bas de page) */}
-        <section className="py-16 bg-gray-50 rounded-xl mb-12 shadow-inner">
+        <section className="py-16 bg-gray-50 rounded-xl mb-12">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Prêt à donner l'Impulsion ?</h2>
             <p className="text-lg text-gray-600 mb-8">
