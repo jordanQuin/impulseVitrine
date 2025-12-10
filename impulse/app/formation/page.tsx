@@ -1,22 +1,50 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
 
 const primaryColor = '#4186fd';
 
-const FormationCard = ({ title, description, duration, level, imageSrc, link }: {
-  title: string;
-  description: string;
-  duration: string;
-  level: string;
-  imageSrc: string;
-  link: string;
-}) => (
+const formations = [
+  {
+    slug: "initiation-nextjs",
+    title: "Initiation à Next.js",
+    category: "Développement Web",
+    description:
+      "Découvre les bases de Next.js et apprends à créer ton premier site moderne et performant.",
+    duration: "2 jours",
+    level: "Débutant",
+    image: "/formation-digital.jpg",
+  },
+  {
+    slug: "front-end-moderne",
+    title: "Front-end moderne avec React & Tailwind",
+    category: "UI / UX & Front-end",
+    description:
+      "Maîtrise les composants réactifs et une mise en page responsive avec Tailwind CSS.",
+    duration: "3 jours",
+    level: "Intermédiaire",
+    image: "/formation-nutrition.jpg",
+  },
+  {
+    slug: "architecture-nextjs",
+    title: "Architecture avancée avec Next.js",
+    category: "Architecture",
+    description:
+      "Structure ton application, optimise les performances et prépare-la pour la scalabilité.",
+    duration: "2 jours",
+    level: "Avancé",
+    image: "/formation-prep-physique.jpg",
+  },
+];
+
+const FormationCard = ({ f }: { f: typeof formations[number] }) => (
   <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-gray-100">
-    
+
     <div className="relative h-48 w-full">
       <Image
-        src={imageSrc}
-        alt={`Image de la formation ${title}`}
+        src={f.image}
+        alt={f.title}
         layout="fill"
         objectFit="cover"
         className="transition duration-500 group-hover:scale-105"
@@ -24,22 +52,27 @@ const FormationCard = ({ title, description, duration, level, imageSrc, link }: 
     </div>
 
     <div className="p-6">
-      <h3 className={`text-2xl font-bold mb-3 text-gray-800 hover:text-blue-600 transition`}>
-        <Link href={link}>{title}</Link>
+      <span className="inline-block text-xs py-1 px-3 rounded-full bg-blue-50 text-blue-700">
+        {f.category}
+      </span>
+
+      <h3 className="text-2xl font-bold text-gray-800 mt-3 mb-3">
+        <Link href={`/formation/${f.slug}`} className="hover:text-blue-600">
+          {f.title}
+        </Link>
       </h3>
-      <p className="text-gray-600 mb-4 text-sm">{description}</p>
+
+      <p className="text-gray-600 mb-4 text-sm line-clamp-3">
+        {f.description}
+      </p>
 
       <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
-        <div className="flex items-center gap-1">
-          ⏱️ {duration}
-        </div>
-        <div className="flex items-center gap-1">
-          Niveau : **{level}**
-        </div>
+        <div>⏱️ {f.duration}</div>
+        <div>Niveau : {f.level}</div>
       </div>
 
       <Link
-        href={link}
+        href={`/formation/${f.slug}`}
         className={`w-full inline-block text-center py-2 px-4 rounded-full font-semibold text-white bg-[${primaryColor}] hover:bg-blue-600 transition duration-300`}
       >
         Voir le programme
@@ -54,14 +87,16 @@ export default function FormationPage() {
     <div className="flex flex-grow flex-col">
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-7xl">
 
-        {/* 1. HERO SECTION : Objectif de la page */}
+        {/* 🟦 HERO */}
         <section className="text-center py-16 md:py-24 bg-gray-50 rounded-xl mt-8">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-            Nos Formations pour Dépasser Vos Limites
+            Nos Formations Professionnelles
           </h1>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
-            Que vous soyez professionnel du sport ou simplement passionné, Impulse vous propose des parcours certifiants et évolutifs pour maîtriser les dernières méthodes de performance.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+            Montez en compétences avec des programmes créés par des experts,
+            adaptés aux développeurs modernes.
           </p>
+
           <Link
             href="/contact"
             className={`bg-white border-2 border-[${primaryColor}] text-[${primaryColor}] px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition duration-300 shadow-md`}
@@ -72,70 +107,17 @@ export default function FormationPage() {
 
         <hr className="my-10 border-gray-200" />
 
-        {/* 2. LISTE DES FORMATIONS (Grille) */}
+        {/* 🟦 GRID des formations */}
         <section className="py-16">
           <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">
             Explorer les Programmes
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {/* Exemple 1 : Formation Pro */}
-            <FormationCard
-              title="Préparateur Physique Certifié"
-              description="Devenez un expert de la performance. Maîtrisez la planification, la nutrition et la réathlétisation."
-              duration="350h"
-              level="Expert"
-              imageSrc="/formation-prep-physique.jpg" 
-              link="/formation/preparateur-physique"
-            />
-
-            {/* Exemple 2 : Formation Loisir/Personnel */}
-            <FormationCard
-              title="Nutrition Sportive Essentiels"
-              description="Apprenez les bases de la diététique et optimisez vos performances et votre bien-être personnel."
-              duration="60h"
-              level="Débutant"
-              imageSrc="/formation-nutrition.jpg" 
-              link="/formation/nutrition-essentielle"
-            />
-            
-            {/* Exemple 3 : Formation Courte/Spécialisée */}
-            <FormationCard
-              title="Atelier Coaching Digital"
-              description="Utilisez l'application Impulse à son plein potentiel pour suivre et motiver vos clients à distance."
-              duration="20h"
-              level="Intermédiaire"
-              imageSrc="/formation-digital.jpg" 
-              link="/formation/coaching-digital"
-            />
-
+            {formations.map((f) => (
+              <FormationCard key={f.slug} f={f}/>
+            ))}
           </div>
-        </section>
-
-        <hr className="my-10 border-gray-200" />
-        
-        {/* 3. SECTION CTA FINAL / INFO CLÉS */}
-        <section className="py-16 bg-[${primaryColor}]/10 rounded-xl mb-12 p-8 md:p-12">
-            <h2 className="text-3xl font-bold text-gray-800 text-center mb-4">
-                Des questions sur les financements ?
-            </h2>
-            <p className="text-lg text-gray-600 text-center mb-8">
-                Nos formations sont éligibles au CPF, Pôle Emploi et autres dispositifs. Contactez notre équipe pour une étude personnalisée de votre dossier.
-            </p>
-            <div className="flex justify-center gap-4">
-              <Link
-                href="/contact"
-                className={`bg-[${primaryColor}] text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-blue-600 transition duration-300`}
-              >
-                Je demande un devis
-              </Link>
-              <Link
-                href="/faq"
-                className="bg-white text-gray-800 border border-gray-300 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition duration-300"
-              >
-                Consulter la FAQ
-              </Link>
-            </div>
         </section>
 
       </div>
