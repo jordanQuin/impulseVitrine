@@ -23,7 +23,7 @@ export default function QuiSommesNousPage() {
                         Nous fusionnons l'Excellence Sportive et le Développement Professionnel.
                     </h2>
                     <p className="text-gray-700 mb-4 leading-relaxed">
-                        Impulse est un organisme de formation novateur, fondé sur la conviction que la rigueur, la résilience et l'engagement du monde sportif sont les meilleurs leviers pour la réussite professionnelle. Nous ne formons pas seulement des compétences, nous insufflons une véritable **culture de la performance**.
+                        Impulse est un organisme de formation novateur, fondé sur la conviction que la rigueur, la résilience et l'engagement du monde sportif sont les meilleurs leviers pour la réussite professionnelle. Nous ne formons pas seulement des compétences, nous insufflons une véritable <strong>culture de la performance</strong>.
                     </p>
                     <p className="text-gray-700 italic leading-relaxed">
                         Notre mission est de rendre l'expertise de haut niveau accessible à tous, que ce soit pour faire progresser une carrière, améliorer la gestion d'équipe ou optimiser son bien-être personnel.
@@ -40,13 +40,10 @@ export default function QuiSommesNousPage() {
                     {/* UTILISATION DE BULLET POINTS CLASSIQUES ET TAILWIND POUR L'ESPACEMENT */}
                     <ul className="space-y-4 text-gray-700 text-lg list-disc list-inside ml-4">
                         <li className="pl-2">
-                            **Formations Professionnelles Certifiantes :** Parcours reconnus dans le domaine du coaching, de la nutrition et de la préparation physique. <Link href="/formation" className={`font-medium text-[${primaryColor}] hover:underline ml-1`}>Voir les programmes.</Link>
+                            <strong>Formations Professionnelles Certifiantes :</strong> Parcours reconnus dans le domaine du coaching, de la nutrition et de la préparation physique. <Link href="/formation" className={`font-medium text-[${primaryColor}] hover:underline ml-1`}>Voir les programmes.</Link>
                         </li>
                         <li className="pl-2">
-                            **Application et Réseau Social :** Notre plateforme dédiée connecte les membres, permet le suivi de formation à distance et facilite le réseautage entre professionnels et adhérents. <Link href="/appli" className={`font-medium text-[${primaryColor}] hover:underline ml-1`}>Découvrir l'App.</Link>
-                        </li>
-                        <li className="pl-2">
-                            **Consulting et Expertise :** Offre de services de coaching sur-mesure pour les entreprises souhaitant intégrer la méthodologie de performance sportive à leurs équipes.
+                            <strong>Application et Réseau Social :</strong> Notre plateforme dédiée connecte les membres, permet le suivi de formation à distance et facilite le réseautage entre professionnels et adhérents. <Link href="/appli" className={`font-medium text-[${primaryColor}] hover:underline ml-1`}>Découvrir l'App.</Link>
                         </li>
                     </ul>
                 </div>
@@ -124,15 +121,6 @@ export default function QuiSommesNousPage() {
                     <h4 className="font-semibold text-lg">Andrea</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Chargée marketing</p>
                 </div>
-            </div>
-            
-             <div className="text-center mt-12">
-                <Link
-                    href="/carrieres"
-                    className="inline-flex items-center text-lg font-medium text-gray-800 hover:text-blue-600 transition"
-                >
-                    Voir nos opportunités de carrière &rarr;
-                </Link>
             </div>
         </section>
 
