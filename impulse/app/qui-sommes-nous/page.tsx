@@ -75,24 +75,54 @@ export default function QuiSommesNousPage() {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div className="text-center">
-                    <Image src="/team-member-1.jpg" alt="Alexandre Dubois" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
-                    <h4 className="font-semibold text-lg">Alexandre Dubois</h4>
-                    <p className={`text-sm text-[${primaryColor}]`}>Fondateur & Expert Coaching</p>
+                    <Image src="/guillaume.png" alt="Guillaume" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                    <h4 className="font-semibold text-lg">Guillaume</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeur web</p>
+                </div>
+                <div className="text-center">
+                    <Image src="/anthony.png" alt="Anthony" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                    <h4 className="font-semibold text-lg">Anthony</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeur mobile</p>
                 </div>
                  <div className="text-center">
-                    <Image src="/team-member-2.jpg" alt="Sophie Leclerc" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
-                    <h4 className="font-semibold text-lg">Sophie Leclerc</h4>
-                    <p className={`text-sm text-[${primaryColor}]`}>Directrice Pédagogique</p>
+                    <Image src="/manon.png" alt="Manon" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                    <h4 className="font-semibold text-lg">Manon</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Community manager</p>
                 </div>
-                 <div className="text-center">
-                    <Image src="/team-member-3.jpg" alt="Marc Vidal" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
-                    <h4 className="font-semibold text-lg">Marc Vidal</h4>
-                    <p className={`text-sm text-[${primaryColor}]`}>Responsable Relation Client</p>
+                <div className="text-center">
+                    <Image src="/Ghaith.png" alt="Ghaith" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                    <h4 className="font-semibold text-lg">Ghaith</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeur web</p>
                 </div>
-                 <div className="text-center">
-                    <Image src="/team-member-4.jpg" alt="Julie Fournier" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
-                    <h4 className="font-semibold text-lg">Julie Fournier</h4>
-                    <p className={`text-sm text-[${primaryColor}]`}>Nutritionniste Sportive</p>
+                <div className="text-center">
+                    <Image src="/Rawan.png" alt="Rawan" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                    <h4 className="font-semibold text-lg">Rawan</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeuse backend</p>
+                </div>
+                <div className="text-center">
+                    <Image src="/Quentin.png" alt="Quentin" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                    <h4 className="font-semibold text-lg">Quentin</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Chef de projet</p>
+                </div>
+                <div className="text-center">
+                    <Image src="/Marianne.png" alt="Marianne" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                    <h4 className="font-semibold text-lg">Marianne</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Chargée événementiel</p>
+                </div>
+                <div className="text-center">
+                    <Image src="/Nicolas.png" alt="Nicolas" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                    <h4 className="font-semibold text-lg">Nicolas</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeur mobile</p>
+                </div>
+                <div className="text-center">
+                    <Image src="/Jordan.png" alt="Jordan" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                    <h4 className="font-semibold text-lg">Jordan</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeur web</p>
+                </div>
+                <div className="text-center">
+                    <Image src="/Andrea.png" alt="Andrea" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                    <h4 className="font-semibold text-lg">Andrea</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Chargée marketing</p>
                 </div>
             </div>
             
