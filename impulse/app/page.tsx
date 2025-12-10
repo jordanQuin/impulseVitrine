@@ -49,7 +49,7 @@ export default function HomePage() {
             <div className="hidden md:block">
               {/* Image de sport ou de succès professionnel */}
               <Image
-                src="/hero-sport.jpg" 
+                src="/sport-home.png" 
                 alt="Formations sportives Impulse"
                 width={500}
                 height={500}
