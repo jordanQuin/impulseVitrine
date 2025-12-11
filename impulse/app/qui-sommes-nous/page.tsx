@@ -70,54 +70,54 @@ export default function QuiSommesNousPage() {
                 Impulse est dirigée par des professionnels passionnés : des coachs certifiés, des experts en nutrition et des pédagogues.
             </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div className="text-center">
-                    <Image src="/guillaume.png" alt="Guillaume" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-30">
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/guillaume.png" alt="Guillaume" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
                     <h4 className="font-semibold text-lg">Guillaume</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Développeur web</p>
                 </div>
-                <div className="text-center">
-                    <Image src="/anthony.png" alt="Anthony" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/anthony.png" alt="Anthony" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
                     <h4 className="font-semibold text-lg">Anthony</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Développeur mobile</p>
                 </div>
-                 <div className="text-center">
-                    <Image src="/manon.png" alt="Manon" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                 <div className="text-center" style={{height: 150}}>
+                    <Image src="/manon.png" alt="Manon" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
                     <h4 className="font-semibold text-lg">Manon</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Community manager</p>
                 </div>
-                <div className="text-center">
-                    <Image src="/Ghaith.png" alt="Ghaith" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Ghaith.png" alt="Ghaith" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
                     <h4 className="font-semibold text-lg">Ghaith</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Développeur web</p>
                 </div>
-                <div className="text-center">
-                    <Image src="/Rawan.png" alt="Rawan" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Rawan.png" alt="Rawan" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
                     <h4 className="font-semibold text-lg">Rawan</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Développeuse backend</p>
                 </div>
-                <div className="text-center">
-                    <Image src="/Quentin.png" alt="Quentin" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Quentin.png" alt="Quentin" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
                     <h4 className="font-semibold text-lg">Quentin</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Chef de projet</p>
                 </div>
-                <div className="text-center">
-                    <Image src="/Marianne.png" alt="Marianne" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Marianne.png" alt="Marianne" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
                     <h4 className="font-semibold text-lg">Marianne</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Chargée événementiel</p>
                 </div>
-                <div className="text-center">
-                    <Image src="/Nicolas.png" alt="Nicolas" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Nicolas.png" alt="Nicolas" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
                     <h4 className="font-semibold text-lg">Nicolas</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Développeur mobile</p>
                 </div>
-                <div className="text-center">
-                    <Image src="/Jordan.png" alt="Jordan" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Jordan.png" alt="Jordan" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
                     <h4 className="font-semibold text-lg">Jordan</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Développeur web</p>
                 </div>
-                <div className="text-center">
-                    <Image src="/Andrea.png" alt="Andrea" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Andrea.png" alt="Andrea" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
                     <h4 className="font-semibold text-lg">Andrea</h4>
                     <p className={`text-sm text-[${primaryColor}]`}>Chargée marketing</p>
                 </div>
