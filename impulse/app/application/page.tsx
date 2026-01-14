@@ -40,14 +40,7 @@ export default function AppliPage() {
             </div>
 
             <div className="relative mx-auto max-w-sm mt-[-2rem]">
-                [Mockup de l'Application sur un téléphone]
-                <Image
-                  src="/app-mockup-main.png" 
-                  alt="Interface principale de l'application Impulse"
-                  width={350}
-                  height={700}
-                  className="rounded-[30px] shadow-2xl border-8 border-gray-900 rotate-3 transform hover:rotate-0 transition duration-500"
-                />
+                <Image src="/mockup1.png" alt="Interface principale de l'application Impulse" width={350} height={700} className="rounded-[30px] shadow-2xl border-8 border-gray-900 rotate-3 transform hover:rotate-0 transition duration-500"/>
             </div>
         </section>
 
