@@ -18,8 +18,8 @@ export default function Footer() {
             
             {/* Contact rapide */}
             <div className="mt-3 flex flex-col gap-0.5 text-sm text-gray-300">
-              <a href="mailto:contact@impulse.com" className="hover:text-white transition">
-                {/* [Icône Mail] */} contact@impulse.com
+              <a href="mailto:impulse.ydays@gmail.com" className="hover:text-white transition">
+                {/* [Icône Mail] */} impulse.ydays@gmail.com
               </a>
             </div>
           </div>
