@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Image from 'next/image';
 
 const ContactDetail = ({ icon, title, value }: { icon: React.ReactNode, title: string, value: string | React.ReactNode }) => (
   <div className="flex items-start mb-6">
@@ -65,7 +65,14 @@ export default function ContactPage() {
             <div className="mt-8">
                 <h3 className="font-bold text-gray-800 mb-3">Nous trouver :</h3>
                 <div className="h-40 bg-gray-200 rounded-lg flex items-center justify-center text-sm text-gray-500 border border-gray-300">
-                    [Placeholder pour Google Maps ou iframe]
+                    <Image
+                        src="/map.png"
+                        alt="Carte du siège social Impulse"
+                        width={200}
+                        height={120}
+                        className="object-contain h-full w-auto"
+                        priority
+                    />
                 </div>
             </div>
           </div>

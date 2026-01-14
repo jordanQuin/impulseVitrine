@@ -19,7 +19,7 @@ export default function HomePage() {
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-7xl">
 
         {/* 1. SECTION HERO */}
-        <section className="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
+        <section className="relative md:pt-26 md:pb-24">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="ml-6 text-center md:text-left">
               <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
@@ -49,7 +49,7 @@ export default function HomePage() {
             <div className="hidden md:block">
               {/* Image de sport ou de succès professionnel */}
               <Image
-                src="/hero-sport.jpg" 
+                src="/sport-home.png" 
                 alt="Formations sportives Impulse"
                 width={500}
                 height={500}
@@ -59,8 +59,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
-        <hr className="my-10 border-gray-200" />
 
         {/* 2. SECTION VALEURS / PILIERS */}
         <section className="py-16">
@@ -90,14 +88,12 @@ export default function HomePage() {
           </div>
         </section>
 
-        <hr className="my-10 border-gray-200" />
-
         {/* 3. SECTION CTA SECONDAIRE (Bas de page) */}
-        <section className="py-16 bg-gray-50 rounded-xl mb-12 shadow-inner">
+        <section className="py-16 bg-gray-50 rounded-xl mb-12">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Prêt à donner l'Impulsion ?</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Téléchargez notre catalogue complet ou parlez-en à un conseiller.
+              Regardez nos formations ou téléchargez notre application
             </p>
             <div className="flex justify-center gap-4">
               <Link
@@ -106,13 +102,13 @@ export default function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Télécharger le catalogue
+                Voir nos formations
               </Link>
               <Link
                 href="/contact"
                 className="bg-white text-gray-800 border border-gray-300 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition duration-300"
               >
-                Prendre rendez-vous
+                Application
               </Link>
             </div>
           </div>

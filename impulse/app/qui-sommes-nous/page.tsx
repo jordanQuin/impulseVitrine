@@ -23,7 +23,7 @@ export default function QuiSommesNousPage() {
                         Nous fusionnons l'Excellence Sportive et le Développement Professionnel.
                     </h2>
                     <p className="text-gray-700 mb-4 leading-relaxed">
-                        Impulse est un organisme de formation novateur, fondé sur la conviction que la rigueur, la résilience et l'engagement du monde sportif sont les meilleurs leviers pour la réussite professionnelle. Nous ne formons pas seulement des compétences, nous insufflons une véritable **culture de la performance**.
+                        Impulse est un organisme de formation novateur, fondé sur la conviction que la rigueur, la résilience et l'engagement du monde sportif sont les meilleurs leviers pour la réussite professionnelle. Nous ne formons pas seulement des compétences, nous insufflons une véritable <strong>culture de la performance</strong>.
                     </p>
                     <p className="text-gray-700 italic leading-relaxed">
                         Notre mission est de rendre l'expertise de haut niveau accessible à tous, que ce soit pour faire progresser une carrière, améliorer la gestion d'équipe ou optimiser son bien-être personnel.
@@ -40,13 +40,10 @@ export default function QuiSommesNousPage() {
                     {/* UTILISATION DE BULLET POINTS CLASSIQUES ET TAILWIND POUR L'ESPACEMENT */}
                     <ul className="space-y-4 text-gray-700 text-lg list-disc list-inside ml-4">
                         <li className="pl-2">
-                            **Formations Professionnelles Certifiantes :** Parcours reconnus dans le domaine du coaching, de la nutrition et de la préparation physique. <Link href="/formation" className={`font-medium text-[${primaryColor}] hover:underline ml-1`}>Voir les programmes.</Link>
+                            <strong>Formations Professionnelles Certifiantes :</strong> Parcours reconnus dans le domaine du coaching, de la nutrition et de la préparation physique. <Link href="/formation" className={`font-medium text-[${primaryColor}] hover:underline ml-1`}>Voir les programmes.</Link>
                         </li>
                         <li className="pl-2">
-                            **Application et Réseau Social :** Notre plateforme dédiée connecte les membres, permet le suivi de formation à distance et facilite le réseautage entre professionnels et adhérents. <Link href="/appli" className={`font-medium text-[${primaryColor}] hover:underline ml-1`}>Découvrir l'App.</Link>
-                        </li>
-                        <li className="pl-2">
-                            **Consulting et Expertise :** Offre de services de coaching sur-mesure pour les entreprises souhaitant intégrer la méthodologie de performance sportive à leurs équipes.
+                            <strong>Application et Réseau Social :</strong> Notre plateforme dédiée connecte les membres, permet le suivi de formation à distance et facilite le réseautage entre professionnels et adhérents. <Link href="/appli" className={`font-medium text-[${primaryColor}] hover:underline ml-1`}>Découvrir l'App.</Link>
                         </li>
                     </ul>
                 </div>
@@ -73,36 +70,57 @@ export default function QuiSommesNousPage() {
                 Impulse est dirigée par des professionnels passionnés : des coachs certifiés, des experts en nutrition et des pédagogues.
             </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div className="text-center">
-                    <Image src="/team-member-1.jpg" alt="Alexandre Dubois" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
-                    <h4 className="font-semibold text-lg">Alexandre Dubois</h4>
-                    <p className={`text-sm text-[${primaryColor}]`}>Fondateur & Expert Coaching</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-30">
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/guillaume.png" alt="Guillaume" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
+                    <h4 className="font-semibold text-lg">Guillaume</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeur web</p>
                 </div>
-                 <div className="text-center">
-                    <Image src="/team-member-2.jpg" alt="Sophie Leclerc" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
-                    <h4 className="font-semibold text-lg">Sophie Leclerc</h4>
-                    <p className={`text-sm text-[${primaryColor}]`}>Directrice Pédagogique</p>
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/anthony.png" alt="Anthony" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
+                    <h4 className="font-semibold text-lg">Anthony</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeur mobile</p>
                 </div>
-                 <div className="text-center">
-                    <Image src="/team-member-3.jpg" alt="Marc Vidal" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
-                    <h4 className="font-semibold text-lg">Marc Vidal</h4>
-                    <p className={`text-sm text-[${primaryColor}]`}>Responsable Relation Client</p>
+                 <div className="text-center" style={{height: 150}}>
+                    <Image src="/manon.png" alt="Manon" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
+                    <h4 className="font-semibold text-lg">Manon</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Community manager</p>
                 </div>
-                 <div className="text-center">
-                    <Image src="/team-member-4.jpg" alt="Julie Fournier" width={150} height={150} className="rounded-full mx-auto mb-3 object-cover" />
-                    <h4 className="font-semibold text-lg">Julie Fournier</h4>
-                    <p className={`text-sm text-[${primaryColor}]`}>Nutritionniste Sportive</p>
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Ghaith.png" alt="Ghaith" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
+                    <h4 className="font-semibold text-lg">Ghaith</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeur web</p>
                 </div>
-            </div>
-            
-             <div className="text-center mt-12">
-                <Link
-                    href="/carrieres"
-                    className="inline-flex items-center text-lg font-medium text-gray-800 hover:text-blue-600 transition"
-                >
-                    Voir nos opportunités de carrière &rarr;
-                </Link>
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Rawan.png" alt="Rawan" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
+                    <h4 className="font-semibold text-lg">Rawan</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeuse backend</p>
+                </div>
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Quentin.png" alt="Quentin" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
+                    <h4 className="font-semibold text-lg">Quentin</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Chef de projet</p>
+                </div>
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Marianne.png" alt="Marianne" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
+                    <h4 className="font-semibold text-lg">Marianne</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Chargée événementiel</p>
+                </div>
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Nicolas.png" alt="Nicolas" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
+                    <h4 className="font-semibold text-lg">Nicolas</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeur mobile</p>
+                </div>
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Jordan.png" alt="Jordan" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
+                    <h4 className="font-semibold text-lg">Jordan</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Développeur web</p>
+                </div>
+                <div className="text-center" style={{height: 150}}>
+                    <Image src="/Andrea.png" alt="Andrea" width={150} height={150} className="rounded-full mx-auto mb-3 object-contain h-full" />
+                    <h4 className="font-semibold text-lg">Andrea</h4>
+                    <p className={`text-sm text-[${primaryColor}]`}>Chargée marketing</p>
+                </div>
             </div>
         </section>
 

@@ -36,6 +36,17 @@ const formations = [
     level: "Avancé",
     image: "/formation-prep-physique.jpg",
   },
+  {
+    slug: "creation-contenu-digital-sportif",
+    title: "Création de contenu digital sportif",
+    category: "Création de contenu",
+    description:
+      "Apprenez les bases incontournables de la création de contenu sportif : techniques simples, outils efficaces et bonnes pratiques pour produire facilement et régulièrement des contenus de qualité.",
+    duration: "7h",
+    level: "Tous niveaux",
+    price: "910 € / personne",
+    image: "/formation-digital.jpg",
+  },
 ];
 
 
@@ -67,10 +78,11 @@ const FormationCard = ({ f }: { f: typeof formations[number] }) => (
         {f.description}
       </p>
 
-      <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
+      <div className="flex items-center justify-between text-sm text-gray-500 mb-2">
         <div>⏱️ {f.duration}</div>
         <div>Niveau : {f.level}</div>
       </div>
+      <div className="text-sm text-gray-700 mb-6">Tarif : {f.price}</div>
 
       <Link
         href={`/formation/${f.slug}`}
@@ -89,7 +101,7 @@ export default function FormationPage() {
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-7xl">
 
         {/* 🟦 HERO */}
-        <section className="text-center py-16 md:py-24 bg-gray-50 rounded-xl mt-8">
+        <section className="text-center py-16 md:py-14 bg-gray-50 rounded-xl mt-8">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
             Nos Formations Professionnelles
           </h1>
@@ -106,7 +118,7 @@ export default function FormationPage() {
           </Link>
         </section>
 
-        <hr className="my-10 border-gray-200" />
+        <hr className="my-4 border-gray-200" />
 
         {/* 🟦 GRID des formations */}
         <section className="py-16">

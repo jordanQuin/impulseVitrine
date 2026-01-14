@@ -22,34 +22,25 @@ export default function AppliPage() {
         {/* 1. HERO SECTION : La Communauté Impulse */}
         <section className="py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div>
-                <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4">
+                <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 mt-[-8rem] mb-2">
                     Impulse : Votre réseau social <span className={`text-[${primaryColor}]`}>de la performance.</span>
                 </h1>
                 <p className="text-xl text-gray-700 mb-8">
                     Connectez-vous à la communauté des professionnels, suivez vos athlètes préférés et accédez à vos ressources de formation où que vous soyez.
                 </p>
                 
-                <div className="flex gap-4 items-center">
+                <div className="flex justify-center gap-20 items-center">
                     <a href="#download-link-ios" aria-label="Télécharger sur l'App Store">
-                        [Icône App Store]
-                        <Image src="/app-store-badge.png" alt="Disponible sur l'App Store" width={150} height={45} />
+                        <Image src="/apple-store.png" alt="Disponible sur l'App Store" width={70} height={45} />
                     </a>
                     <a href="#download-link-android" aria-label="Télécharger sur Google Play">
-                        [Icône Google Play]
-                        <Image src="/google-play-badge.png" alt="Disponible sur Google Play" width={150} height={45} />
+                        <Image src="/google-play.png" alt="Disponible sur Google Play" width={220} height={45} />
                     </a>
                 </div>
             </div>
 
-            <div className="relative mx-auto max-w-sm">
-                [Mockup de l'Application sur un téléphone]
-                <Image
-                  src="/app-mockup-main.png" 
-                  alt="Interface principale de l'application Impulse"
-                  width={350}
-                  height={700}
-                  className="rounded-[30px] shadow-2xl border-8 border-gray-900 rotate-3 transform hover:rotate-0 transition duration-500"
-                />
+            <div className="relative mx-auto max-w-sm mt-[-2rem]">
+                <Image src="/mockup1.png" alt="Interface principale de l'application Impulse" width={350} height={700} className="rounded-[30px] shadow-2xl border-8 border-gray-900 rotate-3 transform hover:rotate-0 transition duration-500"/>
             </div>
         </section>
 
@@ -136,7 +127,7 @@ export default function AppliPage() {
             <div className="flex justify-center gap-6">
                 <a href="#download-link-ios" aria-label="Télécharger sur l'App Store">
                     [Icône App Store]
-                    <Image src="/app-store-badge.png" alt="Disponible sur l'App Store" width={170} height={50} />
+                    <Image src="/app-store.png" alt="Disponible sur l'App Store" width={170} height={50} />
                 </a>
                 <a href="#download-link-android" aria-label="Télécharger sur Google Play">
                     [Icône Google Play]
