@@ -7,36 +7,33 @@ const primaryColor = '#4186fd';
 
 const formations = [
   {
-    slug: "strategie-communication-sport",
-    title: "Stratégie de communication pour structures sportives",
-    category: "Communication digitale",
+    slug: "coach-fitness-debutant",
+    title: "Coach Fitness Débutant",
+    category: "Fitness & Coaching",
     description:
-      "Donnez à votre organisation sportive une communication à la hauteur de vos ambitions. Audit, objectifs, publics, positionnement, outils et calendrier éditorial pour renforcer votre présence et optimiser vos prises de parole.",
-    duration: "7h",
-    level: "Tous niveaux",
-    price: "1 050 € / personne",
-    image: "/formation-digital.jpg",
+      "Apprends les bases du coaching sportif, de la musculation et des méthodes d'encadrement.",
+    duration: "3 jours",
+    level: "Débutant",
+    image: "/formation-fitness.jpg",
   },
   {
-    slug: "reseaux-sociaux-sport",
-    title: "Utilisation des réseaux sociaux dans le sport",
-    category: "Réseaux sociaux",
+    slug: "coach-nutrition-sportive",
+    title: "Coach Nutrition Sportive",
+    category: "Nutrition & Santé",
     description:
-      "Maîtrisez les réseaux sociaux et prenez en main votre image en ligne. Exploitez toutes les plateformes (dont Ypulse), analysez les tendances et repérez les influenceurs clés pour une communication moderne et impactante.",
-    duration: "7h",
-    level: "Tous niveaux",
-    price: "980 € / personne",
+      "Maîtrise l'alimentation sportive, le suivi nutritionnel et l’optimisation de la performance.",
+    duration: "2 jours",
+    level: "Intermédiaire",
     image: "/formation-nutrition.jpg",
   },
   {
-    slug: "personal-branding-athletes-coachs",
-    title: "Personal branding pour athlètes et coachs",
-    category: "Image professionnelle",
+    slug: "coach-preparation-physique",
+    title: "Préparateur Physique Avancé",
+    category: "Performance & Préparation",
     description:
-      "Affirmez votre identité professionnelle et faites la différence. Définissez une image forte et authentique, valorisez votre expertise et apprenez à vous promouvoir avec confiance et stratégie.",
-    duration: "4h",
-    level: "Athlètes & coachs",
-    price: "560 € / personne",
+      "Deviens expert de la performance physique, de la prévention et de la réathlétisation.",
+    duration: "5 jours",
+    level: "Avancé",
     image: "/formation-prep-physique.jpg",
   },
   {
@@ -51,6 +48,7 @@ const formations = [
     image: "/formation-digital.jpg",
   },
 ];
+
 
 const FormationCard = ({ f }: { f: typeof formations[number] }) => (
   <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-gray-100">
