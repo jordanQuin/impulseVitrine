@@ -7,36 +7,37 @@ const primaryColor = '#4186fd';
 
 const formations = [
   {
-    slug: "initiation-nextjs",
-    title: "Initiation à Next.js",
-    category: "Développement Web",
+    slug: "coach-fitness-debutant",
+    title: "Coach Fitness Débutant",
+    category: "Fitness & Coaching",
     description:
-      "Découvre les bases de Next.js et apprends à créer ton premier site moderne et performant.",
-    duration: "2 jours",
+      "Apprends les bases du coaching sportif, de la musculation et des méthodes d'encadrement.",
+    duration: "3 jours",
     level: "Débutant",
-    image: "/formation-digital.jpg",
+    image: "/formation-fitness.jpg",
   },
   {
-    slug: "front-end-moderne",
-    title: "Front-end moderne avec React & Tailwind",
-    category: "UI / UX & Front-end",
+    slug: "coach-nutrition-sportive",
+    title: "Coach Nutrition Sportive",
+    category: "Nutrition & Santé",
     description:
-      "Maîtrise les composants réactifs et une mise en page responsive avec Tailwind CSS.",
-    duration: "3 jours",
+      "Maîtrise l'alimentation sportive, le suivi nutritionnel et l’optimisation de la performance.",
+    duration: "2 jours",
     level: "Intermédiaire",
     image: "/formation-nutrition.jpg",
   },
   {
-    slug: "architecture-nextjs",
-    title: "Architecture avancée avec Next.js",
-    category: "Architecture",
+    slug: "coach-preparation-physique",
+    title: "Préparateur Physique Avancé",
+    category: "Performance & Préparation",
     description:
-      "Structure ton application, optimise les performances et prépare-la pour la scalabilité.",
-    duration: "2 jours",
+      "Deviens expert de la performance physique, de la prévention et de la réathlétisation.",
+    duration: "5 jours",
     level: "Avancé",
     image: "/formation-prep-physique.jpg",
   },
 ];
+
 
 const FormationCard = ({ f }: { f: typeof formations[number] }) => (
   <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-gray-100">
