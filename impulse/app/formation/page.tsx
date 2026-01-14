@@ -52,6 +52,7 @@ const formations = [
   },
 ];
 
+
 const FormationCard = ({ f }: { f: typeof formations[number] }) => (
   <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-gray-100">
 
