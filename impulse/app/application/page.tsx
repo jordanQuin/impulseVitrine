@@ -125,11 +125,11 @@ export default function AppliPage() {
             <div className="flex justify-center gap-6">
                 <a href="#download-link-ios" aria-label="Télécharger sur l'App Store">
                     [Icône App Store]
-                    <Image src="/app-store.png" alt="Disponible sur l'App Store" width={170} height={50} />
+                    <Image src="/apple-store.png" alt="Disponible sur l'App Store" width={60} height={50} />
                 </a>
-                <a href="#download-link-android" aria-label="Télécharger sur Google Play">
+                <a href="#download-link-android"  aria-label="Télécharger sur Google Play">
                     [Icône Google Play]
-                    <Image src="/google-play-badge.png" alt="Disponible sur Google Play" width={170} height={50} />
+                    <Image src="/google-play.png" className="bg-white p-4 rounded-xl" alt="Disponible sur Google Play" width={170} height={70} />
                 </a>
             </div>
         </section>
