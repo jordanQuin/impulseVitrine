@@ -91,14 +91,12 @@ export default function AppliPage() {
                     </Link>
                 </div>
                 <div className="order-1 md:order-2">
-                    [Screenshot de l'interface PRO]
                     <Image src="/app-screenshot-pro.png" alt="Interface professionnelle" width={500} height={300} className="rounded-xl shadow-xl border border-gray-200" />
                 </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="order-2 md:order-1">
-                    [Screenshot du Fil de la Communauté]
                     <Image src="/app-screenshot-feed.png" alt="Fil de discussion communautaire" width={500} height={300} className="rounded-xl shadow-xl border border-gray-200" />
                 </div>
                 <div className="order-1 md:order-2">

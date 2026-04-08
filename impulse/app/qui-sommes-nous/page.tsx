@@ -8,7 +8,7 @@ type TeamMember = {
   name: string;
   role: string;
   img: string;
-  bio?: string;
+  bio?: string; 
   skills?: string[];
 };
 
@@ -592,49 +592,49 @@ export default function QuiSommesNousPage() {
       {
         name: "Ghaith",
         role: "Développeur web",
-        img: "/Ghaith.png",
+        img: "/ghaith.png",
         bio: "Conception et développement de solutions web robustes et modernes.",
         skills: ["Next.js", "Architecture", "Intégration"],
       },
       {
         name: "Rawan",
         role: "Développeuse backend",
-        img: "/Rawan.png",
+        img: "/rawan.png",
         bio: "Back-end solide, APIs et structuration des données.",
         skills: ["API", "Data", "Sécurité"],
       },
       {
         name: "Quentin",
         role: "Chef de projet",
-        img: "/Quentin.png",
+        img: "/quentin.png",
         bio: "Organisation, coordination et suivi des livrables.",
         skills: ["Kanban", "Planning", "Coordination"],
       },
       {
         name: "Marianne",
         role: "Chargée événementiel",
-        img: "/Marianne.png",
+        img: "/marianne.png",
         bio: "Organisation et coordination d’événements.",
         skills: ["Organisation", "Logistique", "Communication"],
       },
       {
         name: "Nicolas",
         role: "Développeur mobile",
-        img: "/Nicolas.png",
+        img: "/nicolas.png",
         bio: "Développement mobile orienté fiabilité et expérience utilisateur.",
         skills: ["Mobile", "Tests", "UI"],
       },
       {
         name: "Jordan",
         role: "Développeur web",
-        img: "/Jordan.png",
+        img: "/jordan.png",
         bio: "Intégration front, composants et responsive.",
         skills: ["React", "Tailwind", "Accessibilité"],
       },
       {
         name: "Andrea",
         role: "Chargée marketing",
-        img: "/Andrea.png",
+        img: "/andrea.png",
         bio: "Marketing digital, acquisition et valorisation de l’offre.",
         skills: ["Acquisition", "Branding", "Analyse"],
       },
