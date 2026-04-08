@@ -97,10 +97,8 @@ export default function HomePage() {
             </p>
             <div className="flex justify-center gap-4">
               <Link
-                href="/catalogue.pdf" 
+                href="/formation" 
                 className={`bg-[${primaryColor}] text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-blue-600 transition duration-300`}
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Voir nos formations
               </Link>
