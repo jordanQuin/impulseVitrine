@@ -103,7 +103,7 @@ export default function HomePage() {
                 Voir nos formations
               </Link>
               <Link
-                href="/contact"
+                href="/application"
                 className="bg-white text-gray-800 border border-gray-300 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition duration-300"
               >
                 Application
