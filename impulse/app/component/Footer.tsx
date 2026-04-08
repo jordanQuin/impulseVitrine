@@ -41,7 +41,6 @@ export default function Footer() {
             <h4 className="font-semibold text-base mb-2 text-white">Ressources & Légal</h4>
             <div className="flex flex-col space-y-1.5 text-sm text-gray-400">
               <Link href="/mentions-legales" className="hover:text-white transition">Mentions Légales</Link>
-              <Link href="/politique-confidentialite" className="hover:text-white transition">Politique de Confidentialité</Link>
             </div>
           </div>
           
