@@ -138,6 +138,34 @@ const formations: Formation[] = [
     public: "Coachs expérimentés et préparateurs physiques",
     prerequis: "Expérience en coaching sportif",
   },
+  {
+    slug: "creation-contenu-digital-sportif",
+    title: "Création de contenu digital sportif",
+    shortDescription:
+      "Apprenez les bases incontournables de la création de contenu sportif : techniques simples, outils efficaces et bonnes pratiques pour produire facilement et régulièrement des contenus de qualité.",
+    category: "Création de contenu",
+    level: "Tous niveaux",
+    duration: "7h (1 jour)",
+    nextSession: "Prochaine session à venir",
+    objectifs: [
+      "Maîtriser les bases de la prise de vue et du montage vidéo sur smartphone",
+      "Utiliser les outils de création graphique simples (type Canva)",
+      "Comprendre les codes des réseaux sociaux sportifs (Reels, TikTok, Instagram)",
+      "Optimiser son temps avec un planning de publication efficace",
+    ],
+    programme: [
+      {
+        day: "Matin",
+        content: "Stratégie éditoriale, storytelling et choix des plateformes",
+      },
+      {
+        day: "Après-midi",
+        content: "Atelier pratique : tournage, montage rapide et outils de design",
+      },
+    ],
+    public: "Professionnels du sport, coachs et gérants de salles",
+    prerequis: "Aucun prérequis technique",
+  },
 ];
 /* =========================
    Page dynamique
