@@ -260,17 +260,6 @@ function DifferentiationSection({ primaryColor }: { primaryColor: string }) {
               Notre positionnement combine accompagnement, montée en compétence et plateforme communautaire spécialisée.
             </p>
           </div>
-
-          <Link
-            href="/appli"
-            className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white shadow-sm transition focus:outline-none focus:ring-4"
-            style={{
-              backgroundColor: primaryColor,
-              boxShadow: "0 10px 25px rgba(65,134,253,0.25)",
-            }}
-          >
-            Découvrir Ypulse
-          </Link>
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -689,14 +678,6 @@ export default function QuiSommesNousPage() {
                 }}
               >
                 Travailler avec Impulse
-              </Link>
-
-              <Link
-                href="/appli"
-                className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 border border-gray-200 focus:outline-none focus:ring-4"
-                style={{ outlineColor: primaryColor }}
-              >
-                Découvrir Ypulse
               </Link>
             </div>
           </div>
