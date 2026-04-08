@@ -48,10 +48,6 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-base mb-2 text-white">Suivez-nous</h4>
             <div className="flex gap-4 text-gray-400">
-              <a href="#" aria-label="LinkedIn" className="hover:text-white transition">
-                {/* [Icône LinkedIn] */}
-                LinkedIn
-              </a>
               <a href="#" aria-label="Instagram" className="hover:text-white transition">
                 {/* [Icône Instagram] */}
                 Instagram

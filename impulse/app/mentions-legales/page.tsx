@@ -77,7 +77,7 @@ export default function MentionsLegales() {
             </span>{" "}
             Conditions d'utilisation
           </h2>
-          <div className="bg-white rounded-lg shadow-sm p-6">
+          <div className="bg-white rounded-lg shadow-sm p-6 border-l-4" style={{ borderColor: primaryColor }}>
             <p className="text-gray-700 mb-4">
               L'utilisateur s'engage à utiliser le site de manière conforme à la loi et à ne pas procéder à des actes pouvant porter 
               préjudice à Impulse ou à ses partenaires. Entre autres, l'utilisateur s'engage à ne pas :
@@ -100,7 +100,7 @@ export default function MentionsLegales() {
             </span>{" "}
             Propriété intellectuelle
           </h2>
-          <div className="bg-white rounded-lg shadow-sm p-6">
+          <div className="bg-white rounded-lg shadow-sm p-6 border-l-4" style={{ borderColor: primaryColor }}>
             <p className="text-gray-700">
               L'ensemble des contenus du site (textes, images, vidéos, logos, graphiques, etc.) sont la propriété exclusive 
               d'Impulse ou de ses partenaires et sont protégés par les lois applicables en matière de propriété intellectuelle. 
@@ -117,7 +117,7 @@ export default function MentionsLegales() {
             </span>{" "}
             Limitation de responsabilité
           </h2>
-          <div className="bg-white rounded-lg shadow-sm p-6">
+          <div className="bg-white rounded-lg shadow-sm p-6 border-l-4" style={{ borderColor: primaryColor }}>
             <p className="text-gray-700 mb-4">
               Impulse met en œuvre des efforts raisonnables pour assurer que les informations fournies sur le site sont exactes 
               et à jour. Cependant, Impulse ne peut pas garantir l'exactitude, l'exhaustivité ou l'adéquation des informations 
@@ -137,7 +137,7 @@ export default function MentionsLegales() {
             </span>{" "}
             Protection des données personnelles
           </h2>
-          <div className="bg-white rounded-lg shadow-sm p-6">
+          <div className="bg-white rounded-lg shadow-sm p-6 border-l-4" style={{ borderColor: primaryColor }}>
             <p className="text-gray-700 mb-4">
               En conformité avec le Règlement Général sur la Protection des Données (RGPD), Impulse s'engage à protéger 
               vos données personnelles.
@@ -165,7 +165,7 @@ export default function MentionsLegales() {
             </span>{" "}
             Cookies
           </h2>
-          <div className="bg-white rounded-lg shadow-sm p-6">
+          <div className="bg-white rounded-lg shadow-sm p-6 border-l-4" style={{ borderColor: primaryColor }}>
             <p className="text-gray-700 mb-4">
               Le site utilise des cookies pour améliorer l'expérience utilisateur et analyser le trafic. Les cookies sont des 
               petits fichiers stockés sur votre appareil.
@@ -187,7 +187,7 @@ export default function MentionsLegales() {
             </span>{" "}
             Liens externes
           </h2>
-          <div className="bg-white rounded-lg shadow-sm p-6">
+          <div className="bg-white rounded-lg shadow-sm p-6 border-l-4" style={{ borderColor: primaryColor }}>
             <p className="text-gray-700">
               Le site contient des liens vers d'autres sites Web. Impulse n'est pas responsable du contenu de ces sites tiers. 
               L'accès à ces liens se fait à vos risques et périls.
@@ -203,7 +203,7 @@ export default function MentionsLegales() {
             </span>{" "}
             Modification des conditions
           </h2>
-          <div className="bg-white rounded-lg shadow-sm p-6">
+          <div className="bg-white rounded-lg shadow-sm p-6 border-l-4" style={{ borderColor: primaryColor }}>
             <p className="text-gray-700">
               Impulse se réserve le droit de modifier à tout moment les présentes mentions légales. Les modifications entreront 
               en vigueur dès leur publication sur le site.
