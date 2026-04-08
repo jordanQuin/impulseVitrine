@@ -1,7 +1,7 @@
 export const runtime = "nodejs";
 
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 type ContactPayload = {
   name?: string;
@@ -10,12 +10,14 @@ type ContactPayload = {
   message?: string;
 };
 
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 export async function POST(req: Request) {
   console.log("🔥 API CONTACT HIT");
-console.log("ENV CHECK", {
-  SMTP_USER: process.env.SMTP_USER,
-  SMTP_PASS: process.env.SMTP_PASS ? "OK" : "MISSING",
-});
+  console.log("ENV CHECK", {
+    RESEND_API_KEY: process.env.RESEND_API_KEY ? "OK" : "MISSING",
+  });
+
   let body: ContactPayload;
   try {
     body = (await req.json()) as ContactPayload;
@@ -30,52 +32,34 @@ console.log("ENV CHECK", {
     return NextResponse.json({ error: "Missing required fields: name, email and message are required." }, { status: 400 });
   }
 
-  const SMTP_USER = process.env.SMTP_USER;
-  const SMTP_PASS = process.env.SMTP_PASS;
+  const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
-  console.log("SMTP_USER =", SMTP_USER ? "OK" : "undefined");
-  console.log("SMTP_PASS =", SMTP_PASS ? "OK" : "MISSING");
+  console.log("RESEND_API_KEY =", RESEND_API_KEY ? "OK" : "MISSING");
 
-  if (!SMTP_USER || !SMTP_PASS) {
-    // Helpful error for local debugging - but do NOT expose secrets in production responses
-    return NextResponse.json({ error: "SMTP credentials are not configured on the server. Ensure SMTP_USER and SMTP_PASS are set." }, { status: 500 });
+  if (!RESEND_API_KEY) {
+    return NextResponse.json({ error: "RESEND_API_KEY is not configured on the server." }, { status: 500 });
   }
 
-  // create transporter (Gmail-compatible SMTP shown here)
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      user: SMTP_USER,
-      pass: SMTP_PASS,
-    },
-  });
-
-  const siteRecipient = SMTP_USER; // messages will be sent to the configured SMTP_USER address
-
-  const mailForOwner = {
-    from: `"${name}" <${email}>`,
-    to: siteRecipient,
-    subject: `[Contact] ${subject || "Nouveau message"}`,
-    text: `Nom: ${name}\nEmail: ${email}\nSujet: ${subject || "-"}\n\nMessage:\n${message}`,
-    html: `<p><strong>Nom:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Sujet:</strong> ${subject || "-"}</p><p><strong>Message:</strong></p><p>${message.replace(/\n/g, "<br/>")}</p>`,
-  };
+  const siteRecipient = "bertrandguillaume524@gmail.com"; // Email destinataire (vous)
 
   try {
-    await transporter.sendMail(mailForOwner);
+    // Envoi du mail au propriétaire du site
+    await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: siteRecipient,
+      subject: `[Contact] ${subject || "Nouveau message"}`,
+      html: `<p><strong>Nom:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Sujet:</strong> ${subject || "-"}</p><p><strong>Message:</strong></p><p>${message.replace(/\n/g, "<br/>")}</p>`,
+    });
 
-    // Optionally send a confirmation to the user who filled the form
+    // Envoi d'une confirmation à l'utilisateur
     try {
-      const mailToUser = {
-        from: siteRecipient,
+      await resend.emails.send({
+        from: "onboarding@resend.dev",
         to: email,
         subject: `Nous avons bien reçu votre message${subject ? ` — ${subject}` : ""}`,
-        text: `Bonjour ${name},\n\nMerci pour votre message. Nous reviendrons vers vous rapidement.\n\nCordialement,\nL'équipe Impulse`,
-      };
-      await transporter.sendMail(mailToUser);
+        html: `<p>Bonjour ${name},</p><p>Merci pour votre message. Nous reviendrons vers vous rapidement.</p><p>Cordialement,<br/>L'équipe Impulse</p>`,
+      });
     } catch (confirmErr) {
-      // non-fatal: owner already received the message; log confirmation send failure
       console.warn("Failed to send confirmation email to user:", confirmErr);
     }
 
