@@ -77,7 +77,7 @@ export default function AppliPage() {
                 Le Coeur de l'Expérience Impulse
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <div className="grid md:grid-cols-2 gap-20 items-center mb-20">
                 <div className="order-2 md:order-1">
                     <span className={`text-sm font-semibold uppercase ${primaryColor}`}>Pour les Pros</span>
                     <h3 className="text-3xl font-bold text-gray-800 mt-2 mb-4">
@@ -91,13 +91,13 @@ export default function AppliPage() {
                     </Link>
                 </div>
                 <div className="order-1 md:order-2">
-                    <Image src="/app-screenshot-pro.png" alt="Interface professionnelle" width={500} height={300} className="rounded-xl shadow-xl border border-gray-200" />
+                    <Image src="/profil-pro-stats.png" alt="Interface professionnelle" width={250} height={300} className="rounded-xl shadow-xl border border-gray-200" />
                 </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-40 items-center">
                 <div className="order-2 md:order-1">
-                    <Image src="/app-screenshot-feed.png" alt="Fil de discussion communautaire" width={500} height={300} className="rounded-xl shadow-xl border border-gray-200" />
+                    <Image src="/feed.png" alt="Fil de discussion communautaire" width={250} height={100} className="ml-auto rounded-xl shadow-xl border border-gray-200" />
                 </div>
                 <div className="order-1 md:order-2">
                     <span className={`text-sm font-semibold uppercase ${primaryColor}`}>Pour tous</span>
