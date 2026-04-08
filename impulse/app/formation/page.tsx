@@ -14,7 +14,7 @@ const formations = [
       "Apprends les bases du coaching sportif, de la musculation et des méthodes d'encadrement.",
     duration: "3 jours",
     level: "Débutant",
-    image: "/formation-fitness.jpg",
+    image: "/coach-beginner.jpg",
   },
   {
     slug: "coach-nutrition-sportive",
@@ -24,7 +24,7 @@ const formations = [
       "Maîtrise l'alimentation sportive, le suivi nutritionnel et l’optimisation de la performance.",
     duration: "2 jours",
     level: "Intermédiaire",
-    image: "/formation-nutrition.jpg",
+    image: "/nutrition-coach.png",
   },
   {
     slug: "coach-preparation-physique",
@@ -34,7 +34,7 @@ const formations = [
       "Deviens expert de la performance physique, de la prévention et de la réathlétisation.",
     duration: "5 jours",
     level: "Avancé",
-    image: "/formation-prep-physique.jpg",
+    image: "/physical-trainer.png",
   },
   {
     slug: "creation-contenu-digital-sportif",
@@ -45,7 +45,7 @@ const formations = [
     duration: "7h",
     level: "Tous niveaux",
     price: "910 € / personne",
-    image: "/formation-digital.jpg",
+    image: "/digital-sportif-content.jpg",
   },
 ];
 
