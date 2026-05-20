@@ -48,9 +48,25 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-base mb-2 text-white">Suivez-nous</h4>
             <div className="flex gap-4 text-gray-400">
-              <a href="#" aria-label="Instagram" className="hover:text-white transition">
-                {/* [Icône Instagram] */}
+              <a 
+                href="https://www.instagram.com/impulse_comsport/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Instagram" 
+                className="hover:text-white transition"
+              >
                 Instagram
+              </a>
+            </div>
+            <div className="flex gap-4 text-gray-400">
+              <a 
+                href="https://www.tiktok.com/@impulsecomsport" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Tiktok" 
+                className="hover:text-white transition"
+              >
+                Tiktok
               </a>
             </div>
           </div>
