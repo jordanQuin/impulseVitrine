@@ -56,7 +56,7 @@ const formations = [
     duration: "2 jours",
     level: "Professionnels",
     price: "1 200 € / personne",
-    image: "/community-management.jpg",
+    image: "/management.png",
   },
   {
     slug: "marketing-influence-sport",
@@ -67,7 +67,7 @@ const formations = [
     duration: "2 days",
     level: "Professionnels",
     price: "1 200 € / personne",
-    image: "/marketing-influence.jpg",
+    image: "/marketing_influence.jpg",
   },
   {
     slug: "accompagnement-personnalise",
@@ -78,7 +78,7 @@ const formations = [
     duration: "Sessions sur mesure",
     level: "Tous niveaux",
     price: "À partir de 300 €",
-    image: "/coaching-custom.jpg",
+    image: "/com_sport.jpg",
   }
 ];
 
