@@ -223,7 +223,7 @@ export default function FormationDetailPage() {
       <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Formation non trouvée 😅</h2>
         <p className="text-gray-500 mb-6">La formation que vous cherchez n'existe pas ou a été déplacée.</p>
-        <Link href="/formations" className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
+        <Link href="/formation" className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
           Retour aux formations
         </Link>
       </div>
@@ -246,7 +246,7 @@ export default function FormationDetailPage() {
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Link href="/formations" className="inline-flex items-center text-blue-300 hover:text-white mb-6 transition">
+          <Link href="/formation" className="inline-flex items-center text-blue-300 hover:text-white mb-6 transition">
             <FaArrowLeft className="mr-2" /> Retour aux formations
           </Link>
           <div className="flex justify-center gap-3 mb-6">
