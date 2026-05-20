@@ -41,11 +41,12 @@ export async function POST(req: Request) {
   }
 
   const siteRecipient = "bertrandguillaume524@gmail.com"; // Email destinataire (vous)
+  const emailSender = "onboarding@resend.dev"; // Email expéditeur (doit être vérifié dans Resend)
 
   try {
     // Envoi du mail au propriétaire du site
     await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: emailSender,  
       to: siteRecipient,
       subject: `[Contact] ${subject || "Nouveau message"}`,
       html: `<p><strong>Nom:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Sujet:</strong> ${subject || "-"}</p><p><strong>Message:</strong></p><p>${message.replace(/\n/g, "<br/>")}</p>`,
@@ -54,7 +55,7 @@ export async function POST(req: Request) {
     // Envoi d'une confirmation à l'utilisateur
     try {
       await resend.emails.send({
-        from: "onboarding@resend.dev",
+        from: emailSender,
         to: email,
         subject: `Nous avons bien reçu votre message${subject ? ` — ${subject}` : ""}`,
         html: `<p>Bonjour ${name},</p><p>Merci pour votre message. Nous reviendrons vers vous rapidement.</p><p>Cordialement,<br/>L'équipe Impulse</p>`,
