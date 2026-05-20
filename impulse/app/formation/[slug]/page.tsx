@@ -36,33 +36,20 @@ const formations: Formation[] = [
     level: "Débutant",
     duration: "3 jours",
     nextSession: "Prochaine session à venir",
-
     objectifs: [
       "Comprendre les bases du coaching sportif",
       "Maîtriser les mouvements fondamentaux de musculation",
       "Encadrer des pratiquants en toute sécurité",
       "Construire des séances adaptées aux débutants",
     ],
-
     programme: [
-      {
-        day: "Jour 1",
-        content: "Bases de l’anatomie, rôle du coach et sécurité",
-      },
-      {
-        day: "Jour 2",
-        content: "Musculation, mouvements fondamentaux et techniques",
-      },
-      {
-        day: "Jour 3",
-        content: "Création de programmes et mise en situation pratique",
-      },
+      { day: "Jour 1", content: "Bases de l’anatomie, rôle du coach et sécurité" },
+      { day: "Jour 2", content: "Musculation, mouvements fondamentaux et techniques" },
+      { day: "Jour 3", content: "Création de programmes et mise en situation pratique" },
     ],
-
     public: "Personnes souhaitant devenir coach fitness",
     prerequis: "Aucun prérequis",
   },
-
   {
     slug: "coach-nutrition-sportive",
     title: "Coach Nutrition Sportive",
@@ -72,29 +59,19 @@ const formations: Formation[] = [
     level: "Intermédiaire",
     duration: "2 jours",
     nextSession: "Prochaine session à venir",
-
     objectifs: [
       "Comprendre les bases de la nutrition sportive",
       "Adapter l’alimentation aux objectifs sportifs",
       "Mettre en place un suivi nutritionnel",
       "Optimiser la récupération et la performance",
     ],
-
     programme: [
-      {
-        day: "Jour 1",
-        content: "Macronutriments, micronutriments et besoins sportifs",
-      },
-      {
-        day: "Jour 2",
-        content: "Plans alimentaires, compléments et cas pratiques",
-      },
+      { day: "Jour 1", content: "Macronutriments, micronutriments et besoins sportifs" },
+      { day: "Jour 2", content: "Plans alimentaires, compléments et cas pratiques" },
     ],
-
     public: "Coachs sportifs et passionnés de nutrition",
     prerequis: "Bases en entraînement sportif",
   },
-
   {
     slug: "coach-preparation-physique",
     title: "Préparateur Physique Avancé",
@@ -104,37 +81,19 @@ const formations: Formation[] = [
     level: "Avancé",
     duration: "5 jours",
     nextSession: "Prochaine session à venir",
-
     objectifs: [
       "Optimiser la performance physique des athlètes",
       "Prévenir les blessures",
       "Maîtriser les protocoles de réathlétisation",
       "Analyser et individualiser l’entraînement",
     ],
-
     programme: [
-      {
-        day: "Jour 1",
-        content: "Physiologie de la performance et tests physiques",
-      },
-      {
-        day: "Jour 2",
-        content: "Force, puissance et vitesse",
-      },
-      {
-        day: "Jour 3",
-        content: "Prévention des blessures et mobilité",
-      },
-      {
-        day: "Jour 4",
-        content: "Réathlétisation et retour au sport",
-      },
-      {
-        day: "Jour 5",
-        content: "Études de cas et programmation avancée",
-      },
+      { day: "Jour 1", content: "Physiologie de la performance et tests physiques" },
+      { day: "Jour 2", content: "Force, puissance et vitesse" },
+      { day: "Jour 3", content: "Prévention des blessures et mobilité" },
+      { day: "Jour 4", content: "Réathlétisation et retour au sport" },
+      { day: "Jour 5", content: "Études de cas et programmation avancée" },
     ],
-
     public: "Coachs expérimentés et préparateurs physiques",
     prerequis: "Expérience en coaching sportif",
   },
@@ -154,19 +113,80 @@ const formations: Formation[] = [
       "Optimiser son temps avec un planning de publication efficace",
     ],
     programme: [
-      {
-        day: "Matin",
-        content: "Stratégie éditoriale, storytelling et choix des plateformes",
-      },
-      {
-        day: "Après-midi",
-        content: "Atelier pratique : tournage, montage rapide et outils de design",
-      },
+      { day: "Matin", content: "Stratégie éditoriale, storytelling et choix des plateformes" },
+      { day: "Après-midi", content: "Atelier pratique : tournage, montage rapide et outils de design" },
     ],
     public: "Professionnels du sport, coachs et gérants de salles",
     prerequis: "Aucun prérequis technique",
   },
+  {
+    slug: "initiation-community-management",
+    title: "Initiation au Community Management",
+    shortDescription:
+      "Apprends aux professionnels du sport à gérer et animer leurs réseaux sociaux, créer du contenu engageant et développer leur communauté.",
+    category: "Réseaux Sociaux",
+    level: "Professionnels",
+    duration: "2 jours (2 x 4h)",
+    nextSession: "Prochaine session à venir",
+    objectifs: [
+      "Comprendre le rôle du community management dans l'écosystème du sport",
+      "Élaborer une stratégie social media complète (Instagram, TikTok, LinkedIn...)",
+      "Planifier efficacement ses publications via un calendrier éditorial",
+      "Animer une communauté et analyser l'impact de ses performances",
+    ],
+    programme: [
+      { day: "Jour 1", content: "Introduction, panorama des réseaux du sport, stratégie et création de contenus (vidéos, stories)" },
+      { day: "Jour 2", content: "Planification, animation de communauté, outils de mesure et atelier pratique sur calendrier réel" },
+    ],
+    public: "Professionnels du sport, athlètes, et gérants de structures sportives",
+    prerequis: "Pratique régulière des réseaux sociaux à titre personnel",
+  },
+  {
+    slug: "marketing-influence-sport",
+    title: "Marketing d'Influence",
+    shortDescription:
+      "Apprends à identifier, collaborer et gérer des partenariats avec des influenceurs pour accroître ta visibilité et engager ta communauté sportive.",
+    category: "Marketing & Image",
+    level: "Professionnels",
+    duration: "2 jours",
+    nextSession: "Prochaine session à venir",
+    objectifs: [
+      "Comprendre les tendances actuelles du marketing d'influence dans le sport",
+      "Identifier et sélectionner les influenceurs pertinents pour sa cible",
+      "Maîtriser les mécaniques de négociation et les types de collaborations",
+      "Mesurer précisément le ROI et les résultats d'une campagne",
+    ],
+    programme: [
+      { day: "Jour 1", content: "Tendances du marché, ciblage des profils et typologies d'actions (challenges, sponsoring)" },
+      { day: "Jour 2", content: "Négociation, contrats, analyse des metrics (reach, engagement) et simulation de campagne" },
+    ],
+    public: "Responsables marketing, gérants de marques ou clubs de sport",
+    prerequis: "Bases en communication digitale",
+  },
+  {
+    slug: "accompagnement-personnalise",
+    title: "Accompagnement Personnalisé",
+    shortDescription:
+      "Bénéficie d'un suivi sur mesure pour t'aider à mettre en place ta stratégie digitale propre et optimiser ta communication selon tes contraintes.",
+    category: "Coaching & Stratégie",
+    level: "Tous niveaux",
+    duration: "Sessions modulables (min. 2h)",
+    nextSession: "À la demande",
+    objectifs: [
+      "Obtenir un diagnostic précis de ta présence digitale actuelle",
+      "Bâtir un plan d'action immédiat et ultra-personnalisé",
+      "Profiter d'un coaching individuel sur tes propres outils (réseaux, site)",
+      "Ajuster tes actions en continu selon tes résultats réels",
+    ],
+    programme: [
+      { day: "Session 1", content: "Diagnostic complet de ta présence en ligne et définition des objectifs" },
+      { day: "Sessions Suivantes", content: "Coaching pratique pas-à-pas, création guidée de contenus et pilotage de ta stratégie" },
+    ],
+    public: "Professionnels du sport, coachs indépendants ou structures",
+    prerequis: "Avoir un projet ou une activité sportive lancée ou en cours de lancement",
+  }
 ];
+
 /* =========================
    Page dynamique
 ========================= */

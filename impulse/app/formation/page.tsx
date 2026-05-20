@@ -47,6 +47,39 @@ const formations = [
     price: "910 € / personne",
     image: "/digital-sportif-content.jpg",
   },
+  {
+    slug: "initiation-community-management",
+    title: "Initiation au Community Management",
+    category: "Réseaux Sociaux",
+    description:
+      "Apprends à gérer et animer tes réseaux sociaux, à créer du contenu engageant et à développer une communauté active autour du sport.",
+    duration: "2 jours",
+    level: "Professionnels",
+    price: "1 200 € / personne",
+    image: "/community-management.jpg",
+  },
+  {
+    slug: "marketing-influence-sport",
+    title: "Marketing d'Influence",
+    category: "Marketing & Image",
+    description:
+      "Identifie, collabore et gère des partenariats avec des influenceurs du sport pour accroître ta visibilité et booster ton engagement.",
+    duration: "2 days",
+    level: "Professionnels",
+    price: "1 200 € / personne",
+    image: "/marketing-influence.jpg",
+  },
+  {
+    slug: "accompagnement-personnalise",
+    title: "Accompagnement Personnalisé",
+    category: "Coaching & Stratégie",
+    description:
+      "Profite d'un suivi sur mesure et d'un diagnostic complet pour structurer ta stratégie digitale et optimiser ta communication sportive.",
+    duration: "Sessions sur mesure",
+    level: "Tous niveaux",
+    price: "À partir de 300 €",
+    image: "/coaching-custom.jpg",
+  }
 ];
 
 
